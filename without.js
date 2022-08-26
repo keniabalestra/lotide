@@ -29,15 +29,12 @@ const without = function(source, itemsToRemove) {
 
 
 //TEST CODE
-let result1 = without(["1", "2", "3"], [1, 2, "3"]);
-let result2 = without([1, 2, 3], [3]);
-let result3 = without([4], [3]);
 
 
 assertArraysEqual(without([2, 3, 1, 4], [1]), [2, 3, 4]);
-assertArraysEqual(result1, [1, 2]);
-assertArraysEqual(result2, [1, 2]);
-assertArraysEqual(result3, [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), [1, 2]);
+assertArraysEqual(without([1, 2, 3], [3]), [1, 2]);
+assertArraysEqual(without([4], [3]), [2, 3]);
 
 //TEST CASE
 const words = ["hello", "world", "lighthouse"];
