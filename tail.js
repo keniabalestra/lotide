@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 let finalArray = [];
-const tail = function(array) {
+const tail = function (array) {
   for (let i = 1; i < array.length; i++) {
     finalArray.push(array[i]);
   }
@@ -25,3 +25,9 @@ assertEqual(outcome.length, 2); //Checks the tail array length;
 assertEqual(outcome[0], "Strawberry");
 assertEqual(outcome[1], "Strawberry");
 
+//CODE REVIEW FROM GARY 2022-08-26
+
+// const tail = function(array){
+ 
+// return array.slice(1);
+// };

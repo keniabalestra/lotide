@@ -34,3 +34,4 @@ const test2 = {P: 2, e: 8, t: 1, r: 3, i: 3, p: 7, c: 3,k: 3,d: 2,a: 1,o: 1,f: 1
 assertEqual(countLetters("lighthouse in the house"), test)
 assertEqual(countLetters("Peter Piper picked a peck of pickled peppers"), test2);
 //JSON.stringify(one) === JSON.stringify(two);
+

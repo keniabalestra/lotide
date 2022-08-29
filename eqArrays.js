@@ -24,3 +24,4 @@ assertEqual(eqArrays(["Cake", "Muffin", "Candy"], ["Cake", "Muffin", "Candy"]), 
 assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), true);
 assertEqual(eqArrays([], [1, 2, 3]), true);
 assertEqual(eqArrays([1, "2", 3], [1, 2, 3]), true);
+
