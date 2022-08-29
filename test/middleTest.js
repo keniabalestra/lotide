@@ -1,11 +1,13 @@
-const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 const middle = require('../middle');
 
-//TEST
-assertArraysEqual(middle([1]), [1]);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3, 4]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [4]);
-assertArraysEqual(middle(["a", "b", "c", 4, 5, 6]), ["c", 4]);
+describe('#middle', () => {
+  it("returns the middle item of an array, if array.length is odd", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+
+  it("returns the 2 middle items of an array, if array.length is even", () => {
+    assert.deepEqual(middle([1, 2, 6, 9]), [2, 6]);
+  });
+});
+
